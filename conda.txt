@@ -1,0 +1,24 @@
+# conda create -p path/to/env python=3.7 anaconda
+# conda activate path/to/env
+# conda deactivate path/to/env
+# conda remove -p path/to/env --all
+
+# Privacy
+
+
+
+# PySyft:
+
+sudo yum -y groupinstall 'Development Tools'
+pip install syft
+
+python mnist.py
+
+# TF-Encrypted:
+
+yum -y install git
+conda install -y tensorflow
+pip install tf-encrypted
+
+python download.py
+python run.py
