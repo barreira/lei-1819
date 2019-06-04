@@ -1,11 +1,11 @@
-logDir="`pwd`/logs"
+logDir="logs"
 
 start=$(date +"%F_%T")
 start_time=$(date +"%T")
 echo "Starting execution: $start_time"
 
 source ~/.bashrc
-conda activate `pwd`/env
+conda activate ./env
 
 dstat --time -m --cpu --net --disk --output "$start".csv 60 > /dev/null
 time python mainPySyft.py 2>&1 | tee "$start".txt
