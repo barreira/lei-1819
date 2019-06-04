@@ -8,7 +8,7 @@ source ~/.bashrc
 conda activate ./env
 
 dstat --time -m --cpu --net --disk --output "$start".csv 60 > /dev/null
-time python mainPySyft.py 2>&1 | tee "$start".txt
+time python mainPySyft.py | tee "$start".txt
 
 pkill dstat
 end=$(date +"%T")
