@@ -5,9 +5,8 @@ then
     mkdir -p $dir
 fi
 
-cd $dir
-conda create -p "$dir"/env python=3.7 anaconda
+conda create -p "$dir"/env python=3.6.8 anaconda
 
 sudo yum -y groupinstall 'Development Tools'
-conda activate -p ./env
+conda activate -p "$dir"/env
 pip install syft

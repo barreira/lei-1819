@@ -1,14 +1,14 @@
-logDir="/home/admin/PySyft/logs"
+logDir="`pwd`/logs"
 
 start=$(date +"%F_%T")
 start_time=$(date +"%T")
 echo "Starting execution: $start_time"
 
-source /home/admin/.bashrc
-conda activate /home/admin/PySyft/env
+source ~/.bashrc
+conda activate `pwd`/env
 
-dstat --time -m --cpu --net --output "$start".csv 1
-time python mnist.py | tee "$start".txt
+dstat --time -m --cpu --net --disk --output "$start".csv 60 > /dev/null
+time python mainPySyft.py 2>&1 | tee "$start".txt
 
 pkill dstat
 end=$(date +"%T")
