@@ -20,6 +20,7 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
+import time
 
 from privacy.analysis import privacy_ledger
 from privacy.analysis.rdp_accountant import compute_rdp_from_ledger
@@ -38,9 +39,9 @@ tf.flags.DEFINE_float('learning_rate', .15, 'Learning rate for training')
 tf.flags.DEFINE_float('noise_multiplier', 1.1,
                       'Ratio of the standard deviation to the clipping norm')
 tf.flags.DEFINE_float('l2_norm_clip', 1.0, 'Clipping norm')
-tf.flags.DEFINE_integer('batch_size', 256, 'Batch size')
-tf.flags.DEFINE_integer('epochs', 60, 'Number of epochs')
-tf.flags.DEFINE_integer('microbatches', 256, 'Number of microbatches '
+tf.flags.DEFINE_integer('batch_size', 1024, 'Batch size')
+tf.flags.DEFINE_integer('epochs', 10, 'Number of epochs')
+tf.flags.DEFINE_integer('microbatches', 128, 'Number of microbatches '
                         '(must evenly divide batch_size)')
 tf.flags.DEFINE_string('model_dir', None, 'Model directory')
 
@@ -72,6 +73,8 @@ def cnn_model_fn(features, labels, mode):
 
   # Define CNN architecture using tf.keras.layers.
   input_layer = tf.reshape(features['x'], [-1, 28, 28, 1])
+  
+  """
   y = tf.keras.layers.Conv2D(16, 8,
                              strides=2,
                              padding='same',
@@ -85,6 +88,12 @@ def cnn_model_fn(features, labels, mode):
   y = tf.keras.layers.Flatten().apply(y)
   y = tf.keras.layers.Dense(32, activation='relu').apply(y)
   logits = tf.keras.layers.Dense(10).apply(y)
+  """
+
+  y = tf.keras.layers.Flatten().apply(input_layer)
+  y = tf.keras.layers.Dense(512, activation=tf.nn.relu).apply(y)
+  y = tf.keras.layers.Dropout(0.2).apply(y)
+  logits = tf.keras.layers.Dense(10, activation=tf.nn.softmax).apply(y)
 
   # Calculate loss as a vector (to support microbatches in DP-SGD).
   vector_loss = tf.nn.sparse_softmax_cross_entropy_with_logits(
@@ -193,6 +202,7 @@ def main(unused_argv):
       shuffle=False)
 
   # Training loop.
+  start = time.time()
   steps_per_epoch = 60000 // FLAGS.batch_size
   for epoch in range(1, FLAGS.epochs + 1):
     # Train the model for one epoch.
@@ -202,6 +212,8 @@ def main(unused_argv):
     eval_results = mnist_classifier.evaluate(input_fn=eval_input_fn)
     test_accuracy = eval_results['accuracy']
     print('Test accuracy after %d epochs is: %.3f' % (epoch, test_accuracy))
+  end = time.time()
+  print("Elapsed time: ", end - start)
 
 if __name__ == '__main__':
   tf.app.run()
