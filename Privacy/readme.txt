@@ -2,11 +2,15 @@ TENSORFLOW PRIVACY
 
 Para criar o ambiente virtual com todas as dependências necessárias:
 	
-	conda create -p ./env python=3.7 --file requirements.txt
+	conda create -p ./env python=3.7 --file req_conda.txt
 
 Ativar o ambiente virtual:
 
 	conda activate ./env
+
+Instalar depedências pip:
+
+	pip install -r requirements.txt
 
 Instalar a framework TensorFlow Privacy:
 
