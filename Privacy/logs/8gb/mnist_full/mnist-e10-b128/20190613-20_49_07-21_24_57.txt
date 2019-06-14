@@ -1,0 +1,467 @@
+INFO:tensorflow:Using default config.
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp7jets6a7
+INFO:tensorflow:Using config: {'_model_dir': '/tmp/tmp7jets6a7', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fe01bc52080>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/inputs/queues/feeding_queue_runner.py:62: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/inputs/queues/feeding_functions.py:500: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Calling model_fn.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/array_grad.py:425: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/gradients_impl.py:110: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Graph was finalized.
+2019-06-13 20:49:10.743278: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-06-13 20:49:10.747901: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2601000000 Hz
+2019-06-13 20:49:10.748085: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5653a6dd1780 executing computations on platform Host. Devices:
+2019-06-13 20:49:10.748104: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0
+OMP: Info #156: KMP_AFFINITY: 1 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #159: KMP_AFFINITY: 1 packages x 1 cores/pkg x 1 threads/core (1 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 
+OMP: Info #250: KMP_AFFINITY: pid 41526 tid 41526 thread 0 bound to OS proc set 0
+2019-06-13 20:49:10.748355: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py:809: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+OMP: Info #250: KMP_AFFINITY: pid 41526 tid 41541 thread 1 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 41526 tid 41540 thread 2 bound to OS proc set 0
+INFO:tensorflow:loss = 2.3017442, step = 1
+INFO:tensorflow:global_step/sec: 3.51709
+INFO:tensorflow:loss = 2.017853, step = 101 (28.433 sec)
+INFO:tensorflow:global_step/sec: 3.59175
+INFO:tensorflow:loss = 1.8043423, step = 201 (27.841 sec)
+INFO:tensorflow:global_step/sec: 3.48366
+INFO:tensorflow:loss = 1.7358327, step = 301 (28.706 sec)
+INFO:tensorflow:global_step/sec: 3.57402
+INFO:tensorflow:loss = 1.7559459, step = 401 (27.979 sec)
+INFO:tensorflow:Saving checkpoints for 468 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.6665722.
+INFO:tensorflow:Calling model_fn.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:455: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T19:51:38Z
+INFO:tensorflow:Graph was finalized.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-468
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-19:51:38
+INFO:tensorflow:Saving dict for global step 468: accuracy = 0.8605, global_step = 468, loss = 1.6667455
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 468: /tmp/tmp7jets6a7/model.ckpt-468
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-468
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1070: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 468 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.7173147, step = 469
+INFO:tensorflow:global_step/sec: 3.56258
+INFO:tensorflow:loss = 1.6669147, step = 569 (28.070 sec)
+INFO:tensorflow:global_step/sec: 3.59971
+INFO:tensorflow:loss = 1.6111658, step = 669 (27.780 sec)
+INFO:tensorflow:global_step/sec: 3.59358
+INFO:tensorflow:loss = 1.6021044, step = 769 (27.827 sec)
+INFO:tensorflow:global_step/sec: 3.57037
+INFO:tensorflow:loss = 1.6124752, step = 869 (28.008 sec)
+INFO:tensorflow:Saving checkpoints for 936 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.6145749.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T19:54:20Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-936
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-19:54:20
+INFO:tensorflow:Saving dict for global step 936: accuracy = 0.8832, global_step = 936, loss = 1.6096221
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 936: /tmp/tmp7jets6a7/model.ckpt-936
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-936
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 936 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.5934111, step = 937
+INFO:tensorflow:global_step/sec: 3.58876
+INFO:tensorflow:loss = 1.5969062, step = 1037 (27.865 sec)
+INFO:tensorflow:global_step/sec: 3.62553
+INFO:tensorflow:loss = 1.6164639, step = 1137 (27.582 sec)
+INFO:tensorflow:global_step/sec: 3.64872
+INFO:tensorflow:loss = 1.5537996, step = 1237 (27.407 sec)
+INFO:tensorflow:global_step/sec: 3.6538
+INFO:tensorflow:loss = 1.6240344, step = 1337 (27.369 sec)
+INFO:tensorflow:Saving checkpoints for 1404 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.619991.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T19:57:15Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-1404
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-19:57:15
+INFO:tensorflow:Saving dict for global step 1404: accuracy = 0.8935, global_step = 1404, loss = 1.5909282
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 1404: /tmp/tmp7jets6a7/model.ckpt-1404
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-1404
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 1404 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.5673189, step = 1405
+INFO:tensorflow:global_step/sec: 3.55858
+INFO:tensorflow:loss = 1.5933477, step = 1505 (28.101 sec)
+INFO:tensorflow:global_step/sec: 3.60841
+INFO:tensorflow:loss = 1.5928339, step = 1605 (27.713 sec)
+INFO:tensorflow:global_step/sec: 3.59318
+INFO:tensorflow:loss = 1.6327732, step = 1705 (27.830 sec)
+INFO:tensorflow:global_step/sec: 3.62665
+INFO:tensorflow:loss = 1.5808485, step = 1805 (27.574 sec)
+INFO:tensorflow:Saving checkpoints for 1872 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.5356934.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:00:30Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-1872
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:00:31
+INFO:tensorflow:Saving dict for global step 1872: accuracy = 0.8997, global_step = 1872, loss = 1.5792853
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 1872: /tmp/tmp7jets6a7/model.ckpt-1872
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-1872
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 1872 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.6120105, step = 1873
+INFO:tensorflow:global_step/sec: 3.57473
+INFO:tensorflow:loss = 1.5721121, step = 1973 (27.975 sec)
+INFO:tensorflow:global_step/sec: 3.54363
+INFO:tensorflow:loss = 1.5790193, step = 2073 (28.220 sec)
+INFO:tensorflow:global_step/sec: 3.48419
+INFO:tensorflow:loss = 1.5759754, step = 2173 (28.701 sec)
+INFO:tensorflow:global_step/sec: 3.58271
+INFO:tensorflow:loss = 1.6133288, step = 2273 (27.912 sec)
+INFO:tensorflow:Saving checkpoints for 2340 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:From /home/rafaelbraga25/LEI/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.596823.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:03:58Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-2340
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:03:58
+INFO:tensorflow:Saving dict for global step 2340: accuracy = 0.903, global_step = 2340, loss = 1.5730134
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 2340: /tmp/tmp7jets6a7/model.ckpt-2340
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-2340
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 2340 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.5468826, step = 2341
+INFO:tensorflow:global_step/sec: 3.56616
+INFO:tensorflow:loss = 1.5506337, step = 2441 (28.042 sec)
+INFO:tensorflow:global_step/sec: 3.56156
+INFO:tensorflow:loss = 1.5564818, step = 2541 (28.078 sec)
+INFO:tensorflow:global_step/sec: 3.5163
+INFO:tensorflow:loss = 1.5483181, step = 2641 (28.439 sec)
+INFO:tensorflow:global_step/sec: 3.61775
+INFO:tensorflow:loss = 1.5960581, step = 2741 (27.641 sec)
+INFO:tensorflow:Saving checkpoints for 2808 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.5150307.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:07:40Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-2808
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:07:40
+INFO:tensorflow:Saving dict for global step 2808: accuracy = 0.904, global_step = 2808, loss = 1.5693753
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 2808: /tmp/tmp7jets6a7/model.ckpt-2808
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-2808
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 2808 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.5886394, step = 2809
+INFO:tensorflow:global_step/sec: 3.59449
+INFO:tensorflow:loss = 1.5633955, step = 2909 (27.821 sec)
+INFO:tensorflow:global_step/sec: 3.60419
+INFO:tensorflow:loss = 1.5398993, step = 3009 (27.745 sec)
+INFO:tensorflow:global_step/sec: 3.63959
+INFO:tensorflow:loss = 1.5490928, step = 3109 (27.476 sec)
+INFO:tensorflow:global_step/sec: 3.46975
+INFO:tensorflow:loss = 1.5957048, step = 3209 (28.820 sec)
+INFO:tensorflow:Saving checkpoints for 3276 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.5375998.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:11:35Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-3276
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:11:35
+INFO:tensorflow:Saving dict for global step 3276: accuracy = 0.9082, global_step = 3276, loss = 1.5642086
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 3276: /tmp/tmp7jets6a7/model.ckpt-3276
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-3276
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 3276 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.5363119, step = 3277
+INFO:tensorflow:global_step/sec: 3.53459
+INFO:tensorflow:loss = 1.584551, step = 3377 (28.292 sec)
+INFO:tensorflow:global_step/sec: 3.61594
+INFO:tensorflow:loss = 1.5814357, step = 3477 (27.655 sec)
+INFO:tensorflow:global_step/sec: 3.56966
+INFO:tensorflow:loss = 1.5691257, step = 3577 (28.014 sec)
+INFO:tensorflow:global_step/sec: 3.61275
+INFO:tensorflow:loss = 1.5292659, step = 3677 (27.680 sec)
+INFO:tensorflow:Saving checkpoints for 3744 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.564904.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:15:47Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-3744
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:15:47
+INFO:tensorflow:Saving dict for global step 3744: accuracy = 0.9107, global_step = 3744, loss = 1.560804
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 3744: /tmp/tmp7jets6a7/model.ckpt-3744
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-3744
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 3744 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.6173317, step = 3745
+INFO:tensorflow:global_step/sec: 3.54517
+INFO:tensorflow:loss = 1.5636442, step = 3845 (28.208 sec)
+INFO:tensorflow:global_step/sec: 3.60226
+INFO:tensorflow:loss = 1.6510658, step = 3945 (27.760 sec)
+INFO:tensorflow:global_step/sec: 3.59827
+INFO:tensorflow:loss = 1.5637845, step = 4045 (27.791 sec)
+INFO:tensorflow:global_step/sec: 3.62805
+INFO:tensorflow:loss = 1.5280681, step = 4145 (27.563 sec)
+INFO:tensorflow:Saving checkpoints for 4212 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.5768976.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:20:15Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-4212
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:20:16
+INFO:tensorflow:Saving dict for global step 4212: accuracy = 0.9126, global_step = 4212, loss = 1.5571856
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 4212: /tmp/tmp7jets6a7/model.ckpt-4212
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-4212
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 4212 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.5774527, step = 4213
+INFO:tensorflow:global_step/sec: 3.5559
+INFO:tensorflow:loss = 1.5297425, step = 4313 (28.123 sec)
+INFO:tensorflow:global_step/sec: 3.56097
+INFO:tensorflow:loss = 1.597275, step = 4413 (28.082 sec)
+INFO:tensorflow:global_step/sec: 3.55591
+INFO:tensorflow:loss = 1.5433041, step = 4513 (28.122 sec)
+INFO:tensorflow:global_step/sec: 3.55527
+INFO:tensorflow:loss = 1.5730658, step = 4613 (28.127 sec)
+INFO:tensorflow:Saving checkpoints for 4680 into /tmp/tmp7jets6a7/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.5476165.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-13T20:24:56Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp7jets6a7/model.ckpt-4680
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-13-20:24:56
+INFO:tensorflow:Saving dict for global step 4680: accuracy = 0.9158, global_step = 4680, loss = 1.5550754
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 4680: /tmp/tmp7jets6a7/model.ckpt-4680
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+For delta=1e-5, the current epsilon is: 0.91
+Test accuracy after 1 epochs is: 0.860
+For delta=1e-5, the current epsilon is: 0.93
+Test accuracy after 2 epochs is: 0.883
+For delta=1e-5, the current epsilon is: 0.95
+Test accuracy after 3 epochs is: 0.893
+For delta=1e-5, the current epsilon is: 0.97
+Test accuracy after 4 epochs is: 0.900
+For delta=1e-5, the current epsilon is: 0.99
+Test accuracy after 5 epochs is: 0.903
+For delta=1e-5, the current epsilon is: 1.01
+Test accuracy after 6 epochs is: 0.904
+For delta=1e-5, the current epsilon is: 1.03
+Test accuracy after 7 epochs is: 0.908
+For delta=1e-5, the current epsilon is: 1.05
+Test accuracy after 8 epochs is: 0.911
+For delta=1e-5, the current epsilon is: 1.07
+Test accuracy after 9 epochs is: 0.913
+For delta=1e-5, the current epsilon is: 1.09
+Test accuracy after 10 epochs is: 0.916
+Elapsed time:  2146.562750816345
