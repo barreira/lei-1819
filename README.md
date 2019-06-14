@@ -1,5 +1,5 @@
 # LEI
-<!---### Nota final do trabalho: XX em 20.--->
+[//]: # "### Nota final do trabalho: XX em 20."
 
 Trabalho prático da U.C. de __Laboratório de Engenharia Informática__ (2018/2019)
 
