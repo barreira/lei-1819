@@ -1,0 +1,295 @@
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #213: KMP_AFFINITY: cpuid leaf 11 not supported - decoding legacy APIC ids.
+OMP: Info #149: KMP_AFFINITY: Affinity capable, using global cpuid info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0,1
+OMP: Info #156: KMP_AFFINITY: 2 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #159: KMP_AFFINITY: 2 packages x 1 cores/pkg x 1 threads/core (2 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 1 
+OMP: Info #250: KMP_AFFINITY: pid 31690 tid 31690 thread 0 bound to OS proc set 0
+INFO:tensorflow:Using default config.
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp3u1m_vop
+INFO:tensorflow:Using config: {'_model_dir': '/tmp/tmp3u1m_vop', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f6ec34a2c50>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/inputs/queues/feeding_queue_runner.py:62: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/inputs/queues/feeding_functions.py:500: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Calling model_fn.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/array_grad.py:425: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/gradients_impl.py:110: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Graph was finalized.
+2019-06-14 19:38:59.085862: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100040000 Hz
+2019-06-14 19:38:59.086163: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55882778c020 executing computations on platform Host. Devices:
+2019-06-14 19:38:59.086197: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-06-14 19:38:59.086344: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py:809: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/tmp3u1m_vop/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+OMP: Info #250: KMP_AFFINITY: pid 31690 tid 31707 thread 1 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 31690 tid 31740 thread 2 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 31690 tid 31706 thread 3 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 31690 tid 31741 thread 4 bound to OS proc set 0
+INFO:tensorflow:loss = 2.3065434, step = 1
+INFO:tensorflow:Saving checkpoints for 58 into /tmp/tmp3u1m_vop/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.9944719.
+INFO:tensorflow:Calling model_fn.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:455: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-14T18:45:18Z
+INFO:tensorflow:Graph was finalized.
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from /tmp/tmp3u1m_vop/model.ckpt-58
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-14-18:45:20
+INFO:tensorflow:Saving dict for global step 58: accuracy = 0.6381, global_step = 58, loss = 1.9778622
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 58: /tmp/tmp3u1m_vop/model.ckpt-58
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp3u1m_vop/model.ckpt-58
+WARNING:tensorflow:From /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1070: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 58 into /tmp/tmp3u1m_vop/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.9563032, step = 59
+INFO:tensorflow:Saving checkpoints for 116 into /tmp/tmp3u1m_vop/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.7845073.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-14T18:51:46Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp3u1m_vop/model.ckpt-116
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-14-18:51:47
+INFO:tensorflow:Saving dict for global step 116: accuracy = 0.788, global_step = 116, loss = 1.7858213
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 116: /tmp/tmp3u1m_vop/model.ckpt-116
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp3u1m_vop/model.ckpt-116
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 116 into /tmp/tmp3u1m_vop/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:loss = 1.8224981, step = 117
+INFO:tensorflow:Saving checkpoints for 174 into /tmp/tmp3u1m_vop/model.ckpt.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Loss for final step: 1.7562356.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-06-14T18:58:24Z
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp3u1m_vop/model.ckpt-174
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-06-14-18:58:25
+INFO:tensorflow:Saving dict for global step 174: accuracy = 0.8371, global_step = 174, loss = 1.7071531
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 174: /tmp/tmp3u1m_vop/model.ckpt-174
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /tmp/tmp3u1m_vop/model.ckpt-174
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:Issue encountered when serializing critical_section_executions.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+'_ExecutionSignature' object has no attribute 'name'
+INFO:tensorflow:Saving checkpoints for 174 into /tmp/tmp3u1m_vop/model.ckpt.
+2019-06-14 19:58:29.708143: W tensorflow/core/framework/op_kernel.cc:1401] OP_REQUIRES failed at save_restore_v2_ops.cc:134 : Resource exhausted: /tmp/tmp3u1m_vop/model.ckpt-174_temp_3688d7fc0a9d43d49674a8838f9e31b5/part-00000-of-00001.data-00000-of-00001.tempstate10735099122091062551; No space left on device
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+For delta=1e-5, the current epsilon is: 1.56
+Test accuracy after 1 epochs is: 0.638
+For delta=1e-5, the current epsilon is: 1.73
+Test accuracy after 2 epochs is: 0.788
+For delta=1e-5, the current epsilon is: 1.89
+Test accuracy after 3 epochs is: 0.837
+Traceback (most recent call last):
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: /tmp/tmp3u1m_vop/model.ckpt-174_temp_3688d7fc0a9d43d49674a8838f9e31b5/part-00000-of-00001.data-00000-of-00001.tempstate10735099122091062551; No space left on device
+	 [[{{node save/SaveV2}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "mnist.py", line 219, in <module>
+    tf.app.run()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "mnist.py", line 209, in main
+    mnist_classifier.train(input_fn=train_input_fn, steps=steps_per_epoch)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 358, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1124, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1158, in _train_model_default
+    saving_listeners)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1403, in _train_with_estimator_spec
+    log_step_count_steps=log_step_count_steps) as mon_sess:
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 508, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 934, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 648, in __init__
+    self._sess = _RecoverableSession(self._coordinated_creator)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 1122, in __init__
+    _WrappedSession.__init__(self, self._create_session())
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 1127, in _create_session
+    return self._sess_creator.create_session()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 812, in create_session
+    hook.after_create_session(self.tf_sess, self.coord)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/basic_session_run_hooks.py", line 568, in after_create_session
+    self._save(session, global_step)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/basic_session_run_hooks.py", line 599, in _save
+    self._get_saver().save(session, self._save_path, global_step=step)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 1171, in save
+    {self.saver_def.filename_tensor_name: checkpoint_file})
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: /tmp/tmp3u1m_vop/model.ckpt-174_temp_3688d7fc0a9d43d49674a8838f9e31b5/part-00000-of-00001.data-00000-of-00001.tempstate10735099122091062551; No space left on device
+	 [[node save/SaveV2 (defined at /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py:1403) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+
+Caused by op 'save/SaveV2', defined at:
+  File "mnist.py", line 219, in <module>
+    tf.app.run()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "mnist.py", line 209, in main
+    mnist_classifier.train(input_fn=train_input_fn, steps=steps_per_epoch)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 358, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1124, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1158, in _train_model_default
+    saving_listeners)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1403, in _train_with_estimator_spec
+    log_step_count_steps=log_step_count_steps) as mon_sess:
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 508, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 934, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 648, in __init__
+    self._sess = _RecoverableSession(self._coordinated_creator)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 1122, in __init__
+    _WrappedSession.__init__(self, self._create_session())
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 1127, in _create_session
+    return self._sess_creator.create_session()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 805, in create_session
+    self.tf_sess = self._session_creator.create_session()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 562, in create_session
+    self._scaffold.finalize()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/monitored_session.py", line 219, in finalize
+    self._saver.build()
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 844, in build
+    self._build(self._filename, build_save=True, build_restore=True)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 881, in _build
+    build_save=build_save, build_restore=build_restore)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 504, in _build_internal
+    save_tensor = self._AddShardedSaveOps(filename_tensor, per_device)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 295, in _AddShardedSaveOps
+    return self._AddShardedSaveOpsForV2(filename_tensor, per_device)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 269, in _AddShardedSaveOpsForV2
+    sharded_saves.append(self._AddSaveOps(sharded_filename, saveables))
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 210, in _AddSaveOps
+    save = self.save_op(filename_tensor, saveables)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 124, in save_op
+    tensors)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/ops/gen_io_ops.py", line 1807, in save_v2
+    name=name)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1801, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+ResourceExhaustedError (see above for traceback): /tmp/tmp3u1m_vop/model.ckpt-174_temp_3688d7fc0a9d43d49674a8838f9e31b5/part-00000-of-00001.data-00000-of-00001.tempstate10735099122091062551; No space left on device
+	 [[node save/SaveV2 (defined at /home/admin/Privacy/env/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py:1403) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+
