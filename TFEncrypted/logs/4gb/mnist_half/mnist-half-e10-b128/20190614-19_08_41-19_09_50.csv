@@ -1,0 +1,9 @@
+"Dstat 0.7.2 CSV output"
+"Author:","Dag Wieers <dag@wieers.com>",,,,"URL:","http://dag.wieers.com/home-made/dstat/"
+"Host:","localhost.localdomain",,,,"User:","barreira"
+"Cmdline:","dstat --time -m --cpu --net --disk --output 2019-06-14_19:08:41.csv 60",,,,"Date:","14 Jun 2019 19:08:41 WEST"
+
+"system","memory usage",,,,"total cpu usage",,,,,,"net/total",,"dsk/total",
+"time","used","buff","cach","free","usr","sys","idl","wai","hiq","siq","recv","send","read","writ"
+14-06 19:08:41,591376384.0,2158592.0,1106411520.0,2254237696.0,15.502,3.278,81.087,0.023,0.0,0.110,0.0,0.0,95330.606,71842.414
+14-06 19:09:41,819884032.0,2158592.0,1106419712.0,2025721856.0,45.452,10.802,43.309,0.0,0.0,0.437,19.533,73.400,0.0,3763.200
