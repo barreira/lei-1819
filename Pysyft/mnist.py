@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 
+import time
 import syft as sy  # <-- NEW: import the Pysyft library
 
 hook = sy.TorchHook(torch)  # <-- NEW: hook PyTorch ie add extra functionalities to support Federated Learning
@@ -13,7 +14,7 @@ alice = sy.VirtualWorker(hook, id="alice")  # <-- NEW: and alice
 
 class Arguments():
     def __init__(self):
-        self.batch_size = 64
+        self.batch_size = 1024
         self.test_batch_size = 1000
         self.epochs = 10
         self.lr = 0.01
@@ -107,7 +108,7 @@ def test(args, model, device, test_loader):
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
 
-
+start = time.time()
 model = Net().to(device)
 optimizer = optim.SGD(model.parameters(), lr=args.lr) # TODO momentum is not supported at the moment
 
@@ -117,4 +118,7 @@ for epoch in range(1, args.epochs + 1):
 
 if args.save_model:
     torch.save(model.state_dict(), "mnist_cnn.pt")
+
+end = time.time()
+print("Elapsed time: ", end - start)
 
