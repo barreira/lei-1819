@@ -4,7 +4,7 @@ Also performs plaintext training.
 """
 
 import sys
-
+import time
 import tensorflow as tf
 import tf_encrypted as tfe
 
@@ -28,9 +28,9 @@ class ModelOwner():
                  representing the model owner.
   """
 
-  BATCH_SIZE = 30
+  BATCH_SIZE = 1024
   ITERATIONS = 60000 // BATCH_SIZE
-  EPOCHS = 1
+  EPOCHS = 10
 
   def __init__(self, player_name, local_data_file):
     self.player_name = player_name
@@ -113,7 +113,7 @@ class PredictionClient():
                        a local federated learning update.
   """
 
-  BATCH_SIZE = 20
+  BATCH_SIZE = 1024
 
   def __init__(self, player_name, local_data_file):
     self.player_name = player_name
@@ -158,6 +158,7 @@ class PredictionClient():
 
 if __name__ == "__main__":
 
+  start = time.time()
   model_owner = ModelOwner(
       player_name="model-owner",
       local_data_file="./data/train.tfrecord")
@@ -196,6 +197,8 @@ if __name__ == "__main__":
     print("Training")
     sess.run(cache_updater, tag='training')
 
-    for _ in range(5):
+    for _ in range(10):
       print("Predicting")
       sess.run(prediction_op, tag='prediction')
+    end = time.time()
+    print("Elapsed time: ", end - start)
