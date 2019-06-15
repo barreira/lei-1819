@@ -14,7 +14,7 @@ Instalar TF-Encrypted:
 
 Efetuar o download do dataset MNIST:
 	
-	python donwload.py
+	python download.py
 	python download_half.py (para metade do dataset MNIST)
 	
 Ambiente de execução:
