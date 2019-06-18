@@ -63,3 +63,4 @@ Predicting
 Predicting
 Predicting
 Elapsed time:  41.10259509086609
+Accuracy: 0.3674603174603175
