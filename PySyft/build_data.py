@@ -13,7 +13,7 @@ def get_csv_dataframe(subdir, f):
 		text = fp.readlines()[6:]
 		text = io.StringIO(''.join(text))
 		data = pd.read_csv(text)
-		data = data.drop(['time', 'buff', 'cach', 'free', 'sys', 'idl', 'wai', 'hiq', 'siq'], axis=1)
+		data = data.drop(['time', 'buff', 'cach', 'free', 'sys', 'idl', 'wai', 'hiq', 'siq', 'recv', 'send'], axis=1)
 	return data
 
 def get_test_name(subdir):
@@ -38,33 +38,29 @@ def get_df_with_std(df_sub, time, acc):
 	df_std = df_sub.std()
 	df_sub = df_sub.mean().to_frame().T
 	df_sub['test'] = [get_test_name(subdir)]
-	df_sub = df_sub[['test', 'used', 'usr', 'recv', 'send', 'read', 'writ']]
+	df_sub = df_sub[['test', 'used', 'usr', 'read', 'writ']]
 	df_sub['acc'] = [acc]
 	df_sub['time'] = [time]
 	
-	used = '{:.2f} +/- {:.2f}'.format(df_sub['used'][0], df_std[0])	
+	used = '{:.2f} +/- {:.2f}'.format(df_sub['used'][0] * 0.000001, df_std[0] * 0.000001)	
 	usr = '{:.2f} +/- {:.2f}'.format(df_sub['usr'][0], df_std[1])
-	recv = '{:.2f} +/- {:.2f}'.format(df_sub['recv'][0], df_std[2])
-	send = '{:.2f} +/- {:.2f}'.format(df_sub['send'][0], df_std[3])
-	read = '{:.2f} +/- {:.2f}'.format(df_sub['read'][0], df_std[4])
-	writ = '{:.2f} +/- {:.2f}'.format(df_sub['writ'][0], df_std[5])
+	read = '{:.2f} +/- {:.2f}'.format(df_sub['read'][0] * 0.001, df_std[2] * 0.001)
+	writ = '{:.2f} +/- {:.2f}'.format(df_sub['writ'][0] * 0.001, df_std[3] * 0.001)
 
 	df_sub = df_sub.astype(str)
 	df_sub.at[0, 'used'] = used
 	df_sub.at[0, 'usr'] = usr
-	df_sub.at[0, 'recv'] = recv
-	df_sub.at[0, 'send'] = send
 	df_sub.at[0, 'read'] = read
 	df_sub.at[0, 'writ'] = writ
 
 	return df_sub
 
-data = pd.DataFrame(columns=['test', 'used', 'usr', 'recv', 'send', 'read', 'writ', 'acc', 'time'])
+data = pd.DataFrame(columns=['test', 'used', 'usr', 'read', 'writ', 'acc', 'time'])
 
 for subdir, _, _ in os.walk(root_dir):
 	if subdir != root_dir:
 		for _, _, files in os.walk(subdir):
-			df_sub = pd.DataFrame(columns=['used', 'usr', 'recv', 'send', 'read', 'writ'])
+			df_sub = pd.DataFrame(columns=['used', 'usr', 'read', 'writ'])
 			i = 0
 			time = 0.0
 			acc = 0.0

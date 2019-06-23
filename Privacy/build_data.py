@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import io
 
-root_dir = 'logs/8gb/mnist_full'
+root_dir = 'logs/8gb/mnist_half'
 
 def get_csv_dataframe(subdir, f):
 	filename = os.path.join(subdir, f)
@@ -40,10 +40,10 @@ def get_df_with_std(df_sub, time, acc):
 	df_sub['acc'] = [acc]
 	df_sub['time'] = [time]
 	
-	used = '{:.2f} +/- {:.2f}'.format(df_sub['used'][0], df_std[0])	
+	used = '{:.2f} +/- {:.2f}'.format(df_sub['used'][0] * 0.000001, df_std[0] * 0.000001)	
 	usr = '{:.2f} +/- {:.2f}'.format(df_sub['usr'][0], df_std[1])
-	read = '{:.2f} +/- {:.2f}'.format(df_sub['read'][0], df_std[2])
-	writ = '{:.2f} +/- {:.2f}'.format(df_sub['writ'][0], df_std[3])
+	read = '{:.2f} +/- {:.2f}'.format(df_sub['read'][0] * 0.001, df_std[2] * 0.001)
+	writ = '{:.2f} +/- {:.2f}'.format(df_sub['writ'][0] * 0.001, df_std[3] * 0.001)
 
 	df_sub = df_sub.astype(str)
 	df_sub.at[0, 'used'] = used
